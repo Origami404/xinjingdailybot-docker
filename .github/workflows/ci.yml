@@ -6,8 +6,8 @@ on:
       - v*
 
 env:
-  DOCKERHUB_USERNAME: Origami404
-  IMAGE_NAME: xinjing-daily-bot
+  DOCKERHUB_USERNAME: origami404
+  IMAGE_NAME: xinjingdailybot
 
 jobs:
   docker:
