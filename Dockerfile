@@ -15,6 +15,8 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    curl \
     libicu72 \
     libssl3 \
  && rm -rf /var/lib/apt/lists/*
