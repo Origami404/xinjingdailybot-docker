@@ -16,7 +16,7 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
     libicu72 \
-    libssl \
+    libssl3 \
  && rm -rf /var/lib/apt/lists/*
 
 COPY --from=builder /app/XinjingdailyBot.WebAPI /app/nlog.config /app/
